@@ -149,6 +149,7 @@ class Score:
         self.img = self.fonto.render(f"Score{self.value}", 0, (0, 0, 255))
         self.position_center=(100,600)
 
+
     def update(self, screen:pg.surface):
         self.img = self.fonto.render(f"Score{self.value}", 0, (0, 0, 255))
         screen.blit(self.img, self.position_center)
